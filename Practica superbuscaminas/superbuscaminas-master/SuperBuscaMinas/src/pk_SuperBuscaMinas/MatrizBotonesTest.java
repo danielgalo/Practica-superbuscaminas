@@ -20,16 +20,16 @@ public class MatrizBotonesTest {
     tabla.getBoton(0, 0).setValor(Valor.MINA);
     tabla.getListaPosicionMinas().add(new Coordenadas(0, 0));
     
-    tabla.getBoton(0, 1).setValor(Valor.MINA);
+    tabla.getBoton(1, 2).setValor(Valor.MINA);
     tabla.getListaPosicionMinas().add(new Coordenadas(1, 2));
     
-    tabla.getBoton(0, 0).setValor(Valor.MINA);
+    tabla.getBoton(0, 1).setValor(Valor.MINA);
     tabla.getListaPosicionMinas().add(new Coordenadas(0, 1));
     
-    tabla.getBoton(0, 0).setValor(Valor.MINA);
+    tabla.getBoton(1, 0).setValor(Valor.MINA);
     tabla.getListaPosicionMinas().add(new Coordenadas(1, 0));
     
-    tabla.getBoton(0, 0).setValor(Valor.MINA);
+    tabla.getBoton(4, 2).setValor(Valor.MINA);
     tabla.getListaPosicionMinas().add(new Coordenadas(4, 2));
  
     //Compruebo que hay
@@ -62,17 +62,4 @@ public class MatrizBotonesTest {
     }
   }
   
-  @Test
-  public void testRecursivoDestapaBotonesAdyacentes() {
-    //Creo tabla de 10x10
-    MatrizBotones tabla = new MatrizBotones(10, 10);
-    tabla.getBoton(2, 0).cambiarAspecto(Estado.NUMERO);
-    
-  }
-
-  
-  
-  
- 
-
 }
